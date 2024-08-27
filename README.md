@@ -2,8 +2,8 @@
 # Installation
 
 ```bash
-git clone https://github.com/rushikesh456thorat/BookingBuddy.git
-cd BookingBuddy
+git clone https://github.com/LoobieBover/Test-personal.git
+cd Test-personal
 npm install
 ```
 # How To Run
