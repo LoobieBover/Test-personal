@@ -3,7 +3,7 @@
 
 ```bash
 git clone https://github.com/LoobieBover/Test-personal.git
-cd Test Personal
+cd Test-Personal
 npm install
 ```
 # How To Run
