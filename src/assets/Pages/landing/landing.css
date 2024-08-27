@@ -1,0 +1,139 @@
+/* Prevent scrolling on the entire page */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Default styles for larger screens */
+  .main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .main video {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 50px);
+  }
+  
+  .main h2 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .plate {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .plate p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Buttons with plate-matching colors */
+  .main button {
+    background-color: rgba(255, 255, 255, 0.3);  /* Match the plate color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+  }
+  
+  .main button:last-of-type {
+    background-color: rgba(255, 255, 255, 0.3);  /* Also match the plate color */
+  }
+  
+  .main button:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.4);  /* Slightly darker on hover */
+  }
+  
+  .main img[src$="removebg-preview.png"] {
+    width: 50px;
+    position: absolute;
+    bottom: 80px;
+    left: calc(50% - 25px);
+  }
+  
+  /* Responsive styles for mobile devices with max-width of 600px */
+  @media only screen and (max-width: 600px) {
+    .main {
+      height: 100vh;  /* Ensure it still takes up full viewport height */
+      justify-content: flex-start;
+      padding: 20px;
+    }
+  
+    .main img {
+      height: auto;
+    }
+  
+    .main h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .main video {
+      width: 80px;
+      top: 10px;
+      left: calc(50% - 40px);
+    }
+  
+    .plate {
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .plate p {
+      font-size: 0.9rem;
+    }
+  
+    .main button {
+      padding: 8px 15px;
+      margin: 8px;
+      font-size: 1rem;
+      width: 120px;
+    }
+  
+    .main img[src$="removebg-preview.png"] {
+      width: 40px;
+      bottom: 60px;
+      left: calc(50% - 20px);
+    }
+  }
+  
